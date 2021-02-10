@@ -1,0 +1,35 @@
+<div id="id01" class="container mt-5">
+    <div class="main">
+        <h2>Child Componenet
+          <p>
+            Today's item: {{variable}}
+          </p>
+        </h2>
+    <form class="form-control">
+      <!-- <form class="form-control" [formGroup]= "childrenForm"> -->
+      <div class="container">
+        <div class="mb-3">
+        <label for="name"><b>ID Product</b></label>
+        <input type="text" class="form-control" placeholder="Id Product" name="idProduit" id="idProduit" required>
+         <!-- <input type="text" class="form-control" formControlName="productId" placeholder="Id Product" name="idProduit" id="idProduit" required> -->
+        </div>
+        <div class="mb-3">
+        <label for="pernom"><b>Product Name</b></label>
+        <input type="text" class="form-control" name="nameProduct" id="nameProduct" required>
+        
+         <!-- <input type="text"  #ptext (keyup)="0" class="form-control" formControlName="productName" placeholder="Name Product" name="nameProduct" id="nameProduct" required> -->
+        </div>
+        <div class="mb-3">
+          <label for="email"><b>Description</b></label>
+          <input type="email" class="form-control" placeholder="Product Description" name="description" id="description" required>
+           <!-- <input type="email" class="form-control" formControlName="productDescription" placeholder="Product Description" name="description" id="description" required> -->
+        </div>
+      <!-- <my-tutoriel [parentData]="ptext.value"></my-tutoriel> --> 
+        <div class="mb-3">         
+        <input type="button" name="valider" class="btn btn-success btn-lg btn-block" value="SendBack">
+        </div>
+    
+      </div>
+    </form>
+    </div>
+  </div>
